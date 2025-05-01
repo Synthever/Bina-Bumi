@@ -1,7 +1,8 @@
 <x-home-navbar />
 
-<header class="flex justify-between items-center p-4">
-        <div class="text-lg font-bold">
+<div class="bg-purple">
+    <header class="flex justify-between items-center p-4">
+        <div class="text-lg" style="font-family: 'Poppins';">
             Hai, welcome back!<br>Pamela Tri Anjani
         </div>
         <div class="text-2xl text-orange-500">🔔</div>
@@ -10,55 +11,54 @@
         <img src="{{ asset('img/home/banner.png') }}" alt="Banner" class="w-full">
     </div>
     <div class="flex justify-between items-center bg-gray-100 p-3 rounded-lg my-4">
-        <div>
-            Rp 1.000<br>20 koin
+        <div class="row-span-2">
+            <h2 class="text-lg font-bold" style="font-family: 'Poppins';">Rp 200.000</h2>
+            <p class="text-sm text-gray-500" style="font-family: 'Poppins';">200.000 Koin</p>
         </div>
-        <div class="text-sm text-green-500">90%</div>
+        <p class="text-sm text-green-500" style="font-family: 'Poppins';">90%</p>
     </div>
     <div class="flex justify-around my-4">
         <div class="text-center">
-            <img src="maps-icon.png" alt="Maps" class="w-12 h-12">
-            <div>Maps</div>
+            <img src="{{ asset('img/home/maps.png') }}" alt="Maps" class="w-12 h-12">
+            <a style="font-family: 'Poppins';">Maps</a>
         </div>
         <div class="text-center">
-            <img src="coins-icon.png" alt="Tukar Koin" class="w-12 h-12">
-            <div>Tukar Koin</div>
+            <img src="{{ asset('img/home/koin.png') }}" alt="Tukar Koin" class="ml-4 w-12 h-12">
+            <a style="font-family: 'Poppins';">Tukar Koin</a>
         </div>
         <div class="text-center">
-            <img src="history-icon.png" alt="History" class="w-12 h-12">
-            <div>History</div>
+            <img src="{{ asset('img/home/history.png') }}" alt="History" class="w-12 h-12">
+            <a style="font-family: 'Poppins';">History</a>
         </div>
     </div>
     <div class="my-4">
-        <h3 class="text-lg mb-2">Ayo ikuti dan selesaikan tugas nya!</h3>
-        <div class="border border-gray-300 rounded-lg p-3 mb-2">
-            Dapatkan 100 botol dalam 3 hari dan dapatkan bonus 10 koin
-        </div>
-        <div class="border border-gray-300 rounded-lg p-3">
-            Kumpulkan lebih banyak botol dalam seminggu dan dapatkan hadiah nya
-        </div>
+        <h3 class="text-lg mb-2 text-bold" style="font-family: 'Poppins';">Ayo ikuti dan selesaikan tugas nya!</h3>
+        
     </div>
     <div class="my-4">
-        <h3 class="text-lg mb-2">terdekat</h3>
-        <div class="border border-gray-300 rounded-lg p-3 mb-2">
+        <h3 class="text-lg mb-2" style="font-family: 'Poppins';">terdekat</h3>
+        <div class="border border-gray-300 rounded-lg p-3 mb-2" style="font-family: 'Poppins';">
             Universitas Amikom Yogyakarta
         </div>
-        <div class="border border-gray-300 rounded-lg p-3">
+        <div class="border border-gray-300 rounded-lg p-3" style="font-family: 'Poppins';">
             Pakuwon Mall Jogja
         </div>
     </div>
     <div class="my-4">
-        <h3 class="text-lg mb-2">Open donasi</h3>
-        <div class="border border-gray-300 rounded-lg p-3">
+        <h3 class="text-lg mb-2" style="font-family: 'Poppins';">Open donasi</h3>
+        <div class="border border-gray-300 rounded-lg p-3" style="font-family: 'Poppins';">
             Ayo, jadi bagian dari perubahan ini!
         </div>
     </div>
     <div class="fixed bottom-0 w-full max-w-lg bg-gray-100 flex justify-around p-4">
-        <div class="text-center">Beranda</div>
-        <div class="text-center">Reward</div>
-        <div class="text-center">Scan</div>
-        <div class="text-center">Edukasi</div>
-        <div class="text-center">Akun</div>
+        <div class="text-center" style="font-family: 'Poppins';">Beranda</div>
+        <div class="text-center" style="font-family: 'Poppins';">Reward</div>
+        <div class="text-center" style="font-family: 'Poppins';">Scan</div>
+        <div class="text-center" style="font-family: 'Poppins';">Edukasi</div>
+        <div class="text-center" style="font-family: 'Poppins';">Akun</div>
     </div>
+</div>
+
+
 
 <x-home-navbar />
