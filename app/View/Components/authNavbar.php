@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class auth-navbar extends Component
+class authNavbar extends Component
 {
     /**
      * Create a new component instance.
