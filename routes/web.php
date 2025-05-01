@@ -15,5 +15,5 @@ Route::get('/register', function () {
 })->name('register');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('home.home');
+});
