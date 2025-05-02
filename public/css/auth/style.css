@@ -1,4 +1,17 @@
 body {
+    font-family: 'Poppins';
+    background: url('/img/auth/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-layer1 {
+}
+
+.container-layer2 {
     background-color: snow;
-    font-family: Arial, sans-serif;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }

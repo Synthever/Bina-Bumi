@@ -14,8 +14,4 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-sans max-w-lg mx-auto w-800 --bg-black">
-
-</body>
-
-</html>
+<body class="max-w-lg mx-auto w-800 --bg-black">
