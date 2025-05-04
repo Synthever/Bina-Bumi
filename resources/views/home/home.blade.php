@@ -34,7 +34,7 @@
             </div>
         </div>
 
-       <!-- Menu -->
+        <!-- Menu -->
         <div class="flex justify-center gap-x-20 mt-20">
             <!-- Menu Item -->
             <div class="flex flex-col items-center space-y-2">
@@ -67,7 +67,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                
+
                 <!-- Card 1 -->
                 <div class="relative rounded-xl shadow-md overflow-hidden">
                     <img src="{{ asset('img/home/news1.png') }}" alt="Challenge 1" class="w-full h-48 object-cover" />
@@ -99,7 +99,7 @@
         </div>
 
         <!-- Card donasi section -->
-        <div class="bg-white rounded-xl shadow-md p-4 w-full mt-10 mb-20">
+        <div class="rounded-xl p-4 w-full mt-10 mb-20 transparent-gasih">
             <h2 class="text-lg font-semibold mb-3 text-gray-800">Open donasi</h2>
 
             <div class="rounded-xl overflow-hidden shadow w-full">
@@ -107,7 +107,7 @@
                 <img src="{{ asset('img/home/donasi.png') }}" alt="Donasi" class="w-full object-cover" />
 
                 <!-- Konten -->
-                <div class="bg-white p-4">
+                <div class="bg-transparent p-4">
                     <h3 class="text-base font-bold text-gray-800 mb-1">Ayo, jadi bagian dari perubahan ini!</h3>
                     <p class="text-sm text-gray-700 mb-2">✨ Setiap botol yang kita kumpulkan adalah langkah kecil menuju perubahan besar.</p>
 
@@ -131,6 +131,45 @@
                             <span> dari Rp 100.000.000 terkumpul</span>
                         </div>
                         <span class="text-black">25%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transparent-gasih rounded-xl p-4 w-full mt-10 mb-4">
+            <!-- Konten utama di sini (misal kartu donasi dsb) -->
+
+            <!-- Footer Navigation -->
+            <div class="mt-6 border-t pt-3">
+                <div class="flex justify-between px-4 py-2">
+                    <!-- Beranda (Aktif) -->
+                    <div class="flex flex-col items-center text-green-900">
+                        <img src="{{ asset('img/home/footer/Component.png') }}" alt="Beranda" class="h-10 w-10" style="filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(50%) contrast(119%);" />
+                        <span class="text-xl mt-1 font-semibold">Beranda</span>
+                        <div class="w-6 h-[3px] bg-green-900 mt-1 rounded-full"></div>
+                    </div>
+
+                    <!-- Reward -->
+                    <div class="flex flex-col items-center text-gray-400">
+                        <img src="{{ asset('img/home/footer/solar_crown-bold.png') }}" alt="Reward" class="h-10 w-10" />
+                        <span class="text-xl mt-1">Reward</span>
+                    </div>
+
+                    <!-- Scan -->
+                    <div class="flex flex-col items-center text-gray-400">
+                        <img src="{{ asset('img/home/footer/bx_scan.png') }}" alt="Scan" class="h-10 w-10" />
+                        <span class="text-xl mt-1">Scan</span>
+                    </div>
+
+                    <!-- Edukasi -->
+                    <div class="flex flex-col items-center text-gray-400">
+                        <img src="{{ asset('img/home/footer/ion_book.png') }}" alt="Edukasi" class="h-10 w-10" />
+                        <span class="text-xl mt-1">Edukasi</span>
+                    </div>
+
+                    <!-- Akun -->
+                    <div class="flex flex-col items-center text-gray-400">
+                        <img src="{{ asset('img/home/footer/iconamoon_profile-fill.png') }}" alt="Akun" class="h-10 w-10" />
+                        <span class="text-xl mt-1">Akun</span>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>
+<html class="ie9"><![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>Dashboard Mahasiswa</title>
+    <link rel='shortcut icon' href='https://amikom.ac.id/template/assets_dashboard/img/amikom_icon_pack/favicon-16x16.png'
+          type='image/x-icon'/>
+
+    <!-- Vendor CSS -->
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css?1746336037"
+          rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/animate.css/animate.min.css?1746336037"
+          rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css"
+          rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css"
+          rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css"
+          rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/chosen/chosen.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="https://amikom.ac.id/template/assets_dashboard/css/app_1.min.css" rel="stylesheet">
+    <link href="https://amikom.ac.id/template/assets_dashboard/css/app_2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+          href="https://amikom.ac.id/template/assets_dashboard/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://amikom.ac.id/template/assets_dashboard/css/over.css?1746336037" rel="stylesheet">
+
+</head>
+
+<body ng-app="AppKrs">
+<header id="header" class="clearfix" data-ma-theme="amikom">
+    <ul class="h-inner">
+        <li class="hi-trigger ma-trigger" data-ma-action="sidebar-open" data-ma-target="#sidebar">
+            <div class="line-wrap">
+                <div class="line top"></div>
+                <div class="line center"></div>
+                <div class="line bottom"></div>
+            </div>
+        </li>
+        <li class="logo hidden-xs">
+            <a href="#"><img src="https://amikom.ac.id/template/assets_dashboard/img/amikom.png"></a>
+        </li>
+        <li class="hi-logo hidden-xs">
+            <a href="#">UNIVERSITAS AMIKOM YOGYAKARTA</a>
+        </li>
+
+        <li class="pull-right">
+            <a href="https://auth.amikom.ac.id/logout_mhs" class="btn bgm-red waves-effect">Logout</a>
+        </li>
+
+
+        <!-- Top Search Content -->
+        <div class="h-search-wrap">
+            <div class="hsw-inner">
+                <i class="hsw-close zmdi zmdi-arrow-left" data-ma-action="search-close"></i>
+                <input type="text">
+            </div>
+        </div>
+</header>
+
+<section id="main">
+    <aside id="sidebar" class="sidebar c-overflow">
+        <div class="s-profile text-center profil-bg">
+            <div class="image-cropper">
+                <img src="https://fotomhs.amikom.ac.id/2024/24_01_5115.jpg" alt="Foto Profil"
+                     title="RAEKHANDI YOGA GUSMAWAN"/>
+            </div>
+            <div class="sp-info">
+                RAEKHANDI YOGA GUSMAWAN                <!--<i class="zmdi zmdi-caret-down"></i>-->
+            </div>
+            <div class="sp-info2">
+                24.01.5115            </div>
+            <div class="sp-btn">
+                <a class="btn bgm-orange waves-effect" href="https://mhs.amikom.ac.id/profil/">Lihat Profil</a>
+                                    <a class="btn bgm-blue waves-effect" href="https://mhs.amikom.ac.id/foto_profil/">Foto Profil</a>
+                            </div>
+
+
+        </div>
+
+        
+<ul class="main-menu">
+    <li class="active">
+        <a href="https://mhs.amikom.ac.id/"><i class="zmdi zmdi-home"></i> Dashboard</a>
+    </li>
+    <li>
+        <a href="https://mhs.amikom.ac.id/panduan/#!/"><i class="zmdi zmdi-collection-bookmark"></i> Panduan Aplikasi & Fitur</a>
+    </li>
+            <li>
+        <a href="https://mhs.amikom.ac.id/email"><i class="zmdi zmdi-email"></i> E-Mail</a>
+    </li>
+        <li>
+        <a href="https://mhs.amikom.ac.id/kuliah/#!/info_kuliah"><i class="zmdi zmdi-info"></i> Info Kuliah</a>
+    </li>
+    <!--    <li>-->
+<!--        <a href="--><!--/#!/no_hp" ><i class="zmdi zmdi-smartphone-iphone"></i> Verifikasi No Ponsel</a>-->
+<!--    </li>-->
+        <!--
+    <li>
+        <a href="--><!--/#!/konfirmasi_no_hp" ><i class="zmdi zmdi-smartphone-iphone"></i> Konfirmasi No Ponsel</a>
+    </li>
+    <li>
+        <a href="" ><i class="zmdi zmdi-labels"></i> Klaim Paket Data</a>
+    </li>
+    -->
+        <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-laptop" aria-hidden="true"></i>Rencana dan Hasil Studi</a>
+        <ul>
+            <li class="sub-menu"><a href="#" data-ma-action="submenu-toggle">Rencana Studi (KRS)</a>
+                <ul>
+	                <li><a href="https://mhs.amikom.ac.id/kuliah/#!/info_krs">Jadwal Pengambilan KRS</a></li>
+                                                                                                                            <li><a href="https://mhs.amikom.ac.id/kuliah/#!/krs_reguler">Pengambilan KRS</a></li>
+                                                                <li><a target="_blank" href="https://mhs.amikom.ac.id/cetak/krs">Cetak KRS</a></li>
+                                        <!--                        <li><a href="--><!--/#!/krs_remidi">Pengambilan KRS Remidi</a></li>-->
+<!--                        <li><a target="_blank" href="--><!--">Cetak KRS Remidi</a></li>-->
+                                                                                                                    </ul>
+            </li>
+            <li><a href="https://mhs.amikom.ac.id/kuliah/#!/kartu_hasil_studi">Kartu Hasil Studi</a></li>
+            <li><a href="https://mhs.amikom.ac.id/kuliah/#!/transkrip_nilai">Transkrip Nilai</a></li>
+
+        </ul>
+    </li>
+    <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-leanpub" aria-hidden="true"></i> Perkuliahan</a>
+        <ul>
+                    <li><a href="https://mhs.amikom.ac.id/kuliah/#!/materi_dan_nilai" >Materi dan Nilai</a></li>
+                            <li><a href="https://mhs.amikom.ac.id/kuliah/#!/pindah_kelas">Pindah Kelas</a></li>
+                </ul>
+    </li>
+    <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-gavel" aria-hidden="true"></i>Ujian</a>
+        <ul>
+                        <li><a href="https://mhs.amikom.ac.id/ujian/#!/susulan" >Daftar Ujian Susulan</a></li>
+            
+            <li><a href="https://mhs.amikom.ac.id/ujian/#!/susulan_soal_ujian" >Ujian Susulan</a></li>
+
+            <li><a href="https://mhs.amikom.ac.id/ujian/#!/remidi_soal_ujian" >Ujian Remidi</a></li>
+            <li><a href="https://mhs.amikom.ac.id/ujian/#!/uts_soal_ujian" >Ujian Tengah Semester</a></li>
+            <li><a href="https://mhs.amikom.ac.id/ujian/#!/uas_soal_ujian" >Ujian Akhir Semester</a></li>
+            <li><a href="https://mhs.amikom.ac.id/pendadaran/#!/history" >Pendadaran</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://bit.ly/pengajuanjudulbaru" target="_blank" ><i class="fa fa-tasks" aria-hidden="true"></i>Bimbingan</a>
+    </li>
+        <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-list-alt" aria-hidden="true"></i>Yudisium</a>
+        <ul>
+            <li><a href="https://mhs.amikom.ac.id/yudisium/#!/pendaftaran" >Pendaftaran</a></li>
+        </ul>
+    </li>
+        <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Wisuda</a>
+        <ul>
+            <li><a href="https://mhs.amikom.ac.id/wisuda/#!/pendaftaran" >Pendaftaran</a></li>
+        </ul>
+    </li>
+        <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-book" aria-hidden="true"></i>Perpustakaan</a>
+
+        <ul>
+                        <li><a href="https://mhs.amikom.ac.id/perpus/#!/pinjaman_aktif">Pinjaman Aktif</a></li>
+            <li><a href="https://mhs.amikom.ac.id/perpus/#!/riwayat_peminjaman">Riwayat Peminjaman</a></li>
+        </ul>
+    </li>
+
+    <li class="sub-menu">
+        <a href="" data-ma-action="submenu-toggle"><i class="fa fa-money" aria-hidden="true"></i>Pembayaran</a>
+
+        <ul>
+            <!--<li><a href="#">History Pembayaran</a></li>-->
+            <!--<li><a href="#">Slip Online</a></li>-->
+            <li><a href="https://mhs.amikom.ac.id/pembayaran/#!/info_biaya_kuliah"">Info Biaya Kuliah</a></li>
+        </ul>
+    </li>
+
+    
+</ul>
+
+    </aside>
+    <ng-view></ng-view>
+
+</section>
+
+<footer id="footer">
+    Copyright &copy; 1994 - 2025 UNIVERSITAS AMIKOM YOGYAKARTA.
+
+    <!-- <ul class="f-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>-->
+</footer>
+
+<!-- Page Loader -->
+<div class="page-loader">
+    <div class="preloader pls-blue">
+        <svg class="pl-circular" viewBox="25 25 50 50">
+            <circle class="plc-path" cx="50" cy="50" r="20"/>
+        </svg>
+
+        <p>Please wait...</p>
+    </div>
+</div>
+
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+<div class="ie-warning">
+    <h1 class="c-white">Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
+        to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="img/browsers/chrome.png" alt="">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="img/browsers/firefox.png" alt="">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="img/browsers/opera.png" alt="">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="img/browsers/safari.png" alt="">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="img/browsers/ie.png" alt="">
+                    <div>IE (New)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+
+<!-- Javascript Libraries -->
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/flot/jquery.flot.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/flot/jquery.flot.resize.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/sparklines/jquery.sparkline.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/moment/min/moment.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/Waves/dist/waves.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/chosen/chosen.jquery.js"></script>
+
+<script type="text/javascript" src="https://amikom.ac.id/template/assets_dashboard/vendors/qrhtml5/qrcode.js"></script>
+<script type="text/javascript" src="https://amikom.ac.id/template/assets_dashboard/vendors/qrhtml5/html5-qrcode.js"></script>
+
+<script src="https://amikom.ac.id/template/assets_dashboard/js/angular/angular.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/js/angular/angular-route.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/js/angular/angular-sanitize.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/js/angular/angular-animate.min.js"></script>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/angular_chosen/dist/angular-chosen.min.js"></script>
+<!-- Placeholder for IE9 -->
+<!--[if IE 9 ]>
+<script src="https://amikom.ac.id/template/assets_dashboard/vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var baseUrl = 'https://mhs.amikom.ac.id/';
+    var baseApiUrl = 'https://mhs.amikom.ac.id/api/';
+    var baseViewApiUrl = 'https://mhs.amikom.ac.id/api/view/';
+    var dataApiUrl = 'https://mhs.amikom.ac.id/api/';
+    var accessToken = '37b1fd58f1a077f97e9428dfc150a9f6';
+
+    $(function () {
+        $(".chosen").chosen();
+    });
+</script>
+
+<script src="https://amikom.ac.id/template/assets_dashboard/js/app.min.js?1746336037"></script>
+<script src="https://mhs.amikom.ac.id/assets/js/app.js?1746336037"></script>
+<script src="https://mhs.amikom.ac.id/assets/js/app-common-service.js?1746336037"></script>
+<script src="https://mhs.amikom.ac.id/assets/js/dashboard/app-route.js?1746336037"></script>
+<script src="https://mhs.amikom.ac.id/assets/js/dashboard/app-service.js?1746336037"></script>
+<script src="https://mhs.amikom.ac.id/assets/js/dashboard/app-controller.js?1746336037"></script>
+
+
+</body>
+
+</html>
