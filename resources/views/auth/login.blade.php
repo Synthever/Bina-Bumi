@@ -22,7 +22,7 @@
 
                 <h1 class="text-2xl text-black text-center font-bold mt-8">Atau</h1>
 
-                <!-- form using "No. Handphone" and "Password" -->
+                <!-- form using "Username" and "Password" -->
                 <form method="POST" action="" class="w-full mt-8">
                     @csrf
                     <div class="space-y-8">

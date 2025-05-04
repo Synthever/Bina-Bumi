@@ -7,6 +7,7 @@
     <link rel="icon" href="{{ asset('css/all/logo.png') }}" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="{{ asset('css/auth/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/home/style.css') }}" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
